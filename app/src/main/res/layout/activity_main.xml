@@ -8,36 +8,49 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            style="@style/StyleNavButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
             android:layout_weight="1"
             android:backgroundTint="#525DC0"
-            android:layout_marginEnd="4dp"
-            android:text="@string/category_button"
-            style="@style/StyleNavButton" />
+            android:text="@string/category_button" />
 
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:backgroundTint="#E13E3E"
+            style="@style/StyleNavButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
             android:layout_weight="1"
-            android:layout_marginStart="4dp"
+
+            android:backgroundTint="#E13E3E"
             android:text="@string/favorite_button"
             app:icon="@drawable/ic_heart_empty"
-            app:iconGravity="textEnd"
-            style="@style/StyleNavButton"/>
+            app:iconGravity="textEnd"/>
 
     </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.fragment.app.FragmentContainerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
