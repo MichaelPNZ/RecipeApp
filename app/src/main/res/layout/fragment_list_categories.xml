@@ -4,7 +4,8 @@
     android:id="@+id/fragmentContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F4FAFF">
+    android:background="#F4FAFF"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tvFragmentTitle"
