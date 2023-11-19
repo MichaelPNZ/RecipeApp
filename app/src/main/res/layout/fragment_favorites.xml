@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/fragmentContainer"
+    android:id="@+id/favorites_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F4FAFF"
-    android:orientation="vertical">
+    android:background="#F4FAFF">
 
     <TextView
-        android:id="@+id/tvFragmentTitle"
+        android:id="@+id/tvFavoritesFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/categories_list_fragment"
+        android:text="@string/fragment_favorite1"
         android:textSize="18sp"
         android:textColor="@android:color/black"
         android:layout_gravity="center_horizontal"

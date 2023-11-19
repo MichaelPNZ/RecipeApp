@@ -18,6 +18,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
+            android:id="@+id/btnCategory"
             style="@style/StyleNavButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -28,12 +29,12 @@
 
 
         <Button
+            android:id="@+id/btnFavorite"
             style="@style/StyleNavButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:layout_weight="1"
-
             android:backgroundTint="#E13E3E"
             android:text="@string/favorite_button"
             app:icon="@drawable/ic_heart_empty"
